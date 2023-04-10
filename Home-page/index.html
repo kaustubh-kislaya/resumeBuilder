@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>ResumeBuilder</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    .corefeaturesection {
+      background-size: 100% 100%;
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+
+    .ctaSection {
+      background-size: 100% 100%;
+    }
+
+    .companiesList {
+      animation: 10s infinite linear moveCompany;
+    }
+
+    @keyframes moveCompany {
+      0% {
+        top: 0;
+      }
+
+      100% {
+        top: -50%;
+      }
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="relative w-full overflow-x-hidden">
+    <!--Navbar-->
+    <nav class="bg-deepBlue">
+      <div class="relative mx-auto flex w-[1080px] items-center justify-between">
+        <!-- logo -->
+        <a href="/" class="cursor-pointer py-7 pr-7">
+          <img src="./images/resumify-logo.png" alt="" width="125px" class="h-full" />
+        </a>
+
+        <ul class="flex space-x-6">
+          <li class="font-mullish hover:text-lightBlue group relative hidden cursor-pointer py-7 text-white transition-all duration-200 lg:block">
+            <a href="#blog">Career Blog</a>
+
+            <div class="bg-lightBlue absolute bottom-0 hidden h-1 w-full transition-all duration-200 group-hover:block"></div>
+          </li>
+
+          <li class="font-mullish hover:text-lightBlue group relative hidden cursor-pointer py-7 text-white transition-all duration-200 lg:block">
+            <a href="#template">Resume Templates</a>
+
+            <div class="bg-lightBlue absolute bottom-0 hidden h-1 w-full transition-all duration-200 group-hover:block"></div>
+          </li>
+
+          <li class="font-mullish hover:text-lightBlue group relative hidden cursor-pointer py-7 text-white transition-all duration-200 lg:block">
+            <a href="#other">Other's Resume</a>
+
+            <div class="bg-lightBlue absolute bottom-0 hidden h-1 w-full transition-all duration-200 group-hover:block"></div>
+          </li>
+
+          <li class="font-mullish hover:text-lightBlue group relative hidden cursor-pointer py-7 text-white transition-all duration-200 lg:block">
+            <a href="#company">Companies</a>
+
+            <div class="bg-lightBlue absolute bottom-0 hidden h-1 w-full transition-all duration-200 group-hover:block"></div>
+          </li>
+
+          <li class="font-mullish hover:text-lightBlue group relative hidden cursor-pointer py-7 text-white transition-all duration-200 lg:block">
+            <a href="#features">Features</a>
+
+            <div class="bg-lightBlue absolute bottom-0 hidden h-1 w-full transition-all duration-200 group-hover:block"></div>
+          </li>
+        </ul>
+
+        <div class="flex space-x-6">
+          <img src="./images/kiitlogo.png" width="60px" height="15px" class="hidden lg:block" />
+          <button class="font-mullish border-lightBlue rounded-sm border px-5 py-3 text-sm font-bold text-white">Log in</button>
+          <button class="font-mullish text-lightBlue300 hover:text-lightBlue500 hidden rounded-sm border bg-white px-4 py-3 text-center text-sm font-bold transition-all duration-200 lg:flex">
+            Sign Up
+            <svg viewBox="0 0 24 24" focusable="false" class="ml-3 h-[14px] w-[14px]">
+              <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--Build Resume Section-->
+    <section class="bg-deepBlue relative">
+      <div class="mx-auto flex w-10/12 max-w-[1080px] items-center justify-between sm:flex-col lg:flex-row">
+        <!--left part-->
+        <div class="space-y-8">
+          <h1 class="font-mullish text-[40px] font-bold leading-[1.2] text-white">Craft your perfect resume with ease</h1>
+          <div class="bg-greenLight h-1 w-6"></div>
+          <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
+            Build your brand-new resume in as little as 5 minutes <br />
+            <br />
+            Try it for free
+          </p>
+          <button class="bg-lightBlue font-mullish hover:bg-lightBlue500 rounded-md px-[18px] py-[14px] font-bold text-white transition-all duration-200">Build My Resume</button>
+        </div>
+        <!--right part-->
+        <img src="./images/img2.jpg" alt="rightimage" class="w-full max-w-[680px] scale-110" />
+      </div>
+
+      <!--shape part-->
+      <div class="absolute left-0 right-0 w-[103%]">
+        <img src="./images/hero-shape.svg" alt="" class="scale-122 w-full object-fill" />
+      </div>
+    </section>
+
+    <!--Blog section-->
+    <section id="blog" class="relative mt-[190px] overflow-hidden">
+      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167" class="absolute -top-[8rem] left-[10rem] -z-10 inline-block" />
+
+      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167" class="absolute right-0 top-[3rem] inline-block rotate-180" />
+
+      <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4">
+        <!--heading-->
+        <h2 class="font-mullish hidden text-center text-2xl font-extrabold leading-[1.2] md:block">
+          Our Users Are Being Hired at the <br />
+          World's Leading Companies
+        </h2>
+        <h2 class="font-mullish text-center text-5xl font-extrabold leading-[1.2] md:hidden">Explore Razorpay Payment Suite</h2>
+
+        <div class="bg-greenLight mx-auto mb-6 mt-4 h-1 w-6"></div>
+
+        <div class="mt-10 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <!--Box1-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/harshit.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Harshit Khare</div>
+              <p class="text-base text-gray-700">Resumify is a fantastic tool to build your CV. It is fast, easy to use and you can choose among different stunning design templates! Super!</p>
+            </div>
+          </div>
+
+          <!--Box2-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/aryan.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Aryan Nigam</div>
+              <p class="text-base text-gray-700">Resumify is responsible for my most beautiful resume. My best job leads praised my eye for design based solely on my resume.</p>
+            </div>
+          </div>
+
+          <!--Box3-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/yash.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Yash Jaiswal</div>
+              <p class="text-base text-gray-700">Resumify helped me fit all of my experience, publications, and awards concisely onto my resume in a clean and visually appealing way.</p>
+            </div>
+          </div>
+
+          <!--Box4-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/avineet.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Avineet Jena</div>
+              <p class="text-base text-gray-700">Resumify makes it easy to set up a well designed and polished resume. I’ve recommended it to friends due to its ease of use and it’s fun to see it come together.</p>
+            </div>
+          </div>
+
+          <!--Box5-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/aakarshan.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Aakarshan Shaurya</div>
+              <p class="text-base text-gray-700">Absolutely love Resumify! The layouts are phenomenal and enhancement hints that the tool provides you with is like having your own personal resume consultant!</p>
+            </div>
+          </div>
+
+          <!--Box6-->
+          <div class="max-w-sm cursor-pointer overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+            <img class="w-full" src="./images/amrinder.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Amritanshu Apurva</div>
+              <p class="text-base text-gray-700">With sleek designs and an easy to use online tool, Resumify allowed me to quickly build and edit a professional resume with a personal touch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Template section-->
+    <section id="template" class="mt-14 bg-[url(./images/feature-section-2BG.svg)] bg-cover bg-no-repeat pb-[500px] pt-[20rem]">
+      <div class="relative mx-auto w-10/12 max-w-[1080px] pt-4">
+        <h2 class="font-mullish text-center text-2xl font-bold leading-[1.2] text-white">Explore Templates to win Recruiters</h2>
+        <div class="bg-greenLight mx-auto mb-6 mt-4 h-1 w-6"></div>
+
+        <!-- main feaeture box-->
+        <div class="min-h[440px] relative flex w-full flex-col">
+          <img src="./images/x-flame-1.png" alt="" loading="lazy" class="absolute -left-[140px] -top-[142px] w-[200px]" />
+
+          <img src="./images/x-flame-2.png" alt="" loading="lazy" class="absolute -right-[180px] top-[150px] w-[200px]" />
+
+          <!--content box-->
+          <div class="relative z-20 w-full rounded-md border border-slate-700 bg-[#181c2e] p-10 py-12">
+            <!--left part-->
+            <div class="z-20 flex h-full w-full flex-col items-start justify-between gap-12">
+              <h3 class="font-mullish max-w-[500px] text-[28px] font-bold leading-10 text-white">
+                Build Your Perfect Resume in Minutes with Our
+                <img src="./images/R-logo.png" alt="Resumify-photo" width="60px" height="10px" class="inline" />
+                <span>esumify</span>
+                <span class="text-greenLight">Professional Templates!</span>
+              </h3>
+
+              <ul class="space-y-2">
+                <li class="font-mullish flex items-center space-x-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Pick a Template </span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Customize your Layouts </span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Fill in the blanks </span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2 text-white">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Hit 'Download' </span>
+                </li>
+              </ul>
+              <div class="flex w-full flex-col-reverse items-center space-x-4 md:flex-row">
+                <button class="bg-lightBlue font-mullish hover:bg-lightBlue500 relative flex place-content-center items-center self-stretch rounded-md px-[18px] py-[14px] font-bold text-white transition-all duration-200 md:w-fit md:justify-start md:pr-[90px]">
+                  Discover
+                  <div class="bg-greenLight absolute right-6 flex h-[60px] w-12 skew-x-[20deg] items-center justify-center">
+                    <!--arrow-->
+                    <svg viewBox="0 0 24 24" focusable="false" class="h-[20px] w-[20px] -skew-x-[20deg]">
+                      <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </svg>
+                  </div>
+                </button>
+                <!--hyperlink wala-->
+                <div class="group flex cursor-pointer flex-row items-center">
+                  <a href="#" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+                  <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-lightBlue h-5 w-5 transition-all duration-200"></i>
+                </div>
+              </div>
+            </div>
+            <!--background image for content box-->
+            <img src="./images/img1.jpg" alt="right wala image" class="z-4 absolute bottom-0 right-0 hidden max-w-[600px] md:block md:max-w-[400px] lg:block lg:max-w-[600px]" />
+          </div>
+
+          <!--card box-->
+          <div class="my-14 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <!--box1-->
+            <div class="bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-card flex cursor-pointer flex-col rounded-xl bg-white bg-clip-border transition-all duration-200 hover:scale-105">
+              <div class="mx-4 -mt-6 translate-y-0">
+                <a href="#" blur-shadow-image="true">
+                  <img class="w-auto rounded-lg" src="./images/college-resume-template.jpg" alt="card image" />
+                </a>
+              </div>
+              <div class="text-secondary flex-1 p-6">
+                <h1 class="font-medium">College Resume Template</h1>
+                <p class="opcacity-60 mb-3">No experience? No problem!</p>
+              </div>
+            </div>
+
+            <!--box2-->
+            <div class="bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-card flex cursor-pointer flex-col rounded-xl bg-white bg-clip-border transition-all duration-200 hover:scale-105">
+              <div class="mx-4 -mt-6 translate-y-0">
+                <a href="#" blur-shadow-image="true">
+                  <img class="w-auto rounded-lg" src="./images/professionaltemplate.jpg" alt="card image" />
+                </a>
+              </div>
+              <div class="text-secondary flex-1 p-6">
+                <h4 class="font-medium">Professional Resume template</h4>
+                <p class="opcacity-60 mb-3">Put your best foot forward with a professional resume template</p>
+              </div>
+            </div>
+
+            <!--box3-->
+            <div class="bg-gradient-to-t from-gray-200 via-gray-400 to-gray-600 shadow-card flex cursor-pointer flex-col rounded-xl bg-white bg-clip-border transition-all duration-200 hover:scale-105">
+              <div class="mx-4 -mt-6 translate-y-0">
+                <a href="#" blur-shadow-image="true">
+                  <img class="w-auto rounded-lg" src="./images/creativetemplate.jpg" alt="card image" />
+                </a>
+              </div>
+              <div class="text-secondary flex-1 p-6">
+                <h4 class="font-medium">Creative Resume Template</h4>
+                <p class="opcacity-60 mb-3">A resume template as creative as your imagination!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--demo-box-->
+        <div class="relative mb-24 hidden w-full items-center justify-evenly gap-y-6 rounded-md border border-slate-700 p-8 md:flex md:flex-col lg:flex lg:flex-row">
+          <p class="font-mullish text-xl text-white">Resumify is lightning fast. There's no software to download. No multi-part sign-up form. No long-winded tutorials. Just a straightforward process.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--See Other's Section -->
+    <section id="other" class="relative bg-white">
+      <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4">
+        <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute -top-[6rem] left-[300px] z-10 w-[233px]" />
+        <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute -right-[3.5rem] -top-[6rem] z-10 w-[233px]" />
+
+        <div class="relative z-[100] grid w-full grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+          <!--item 1-->
+          <div class="relative z-0 flex items-center">
+            <h2 class="text-deepBlueHead font-mullish text-4xl font-extrabold leading-[3.375rem]">
+              Explore the talent pool of
+              <span class="text-lightBlue500"> Our College </span>
+            </h2>
+          </div>
+
+          <!--card 1-->
+          <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+            <img src="./images/cslogo-removebg-preview.png" alt="" class="h-15 w-20" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">Computer Science</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Discover the skills and potential of tomorrow's tech leaders through their resumes today. Unlocking the power of technology through innovation and logic.</p>
+            <div class="group flex cursor-pointer flex-row items-center">
+              <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
+            </div>
+          </div>
+
+          <!--card 2-->
+          <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+            <img src="./images/ETClogo.png" alt="" class="h-12 w-12" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">Electronics & Telecommunication</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Discover the brilliance of tomorrow's tech pioneers - browse the resumes of top electronics and telecommunication students today.</p>
+            <div class="group flex cursor-pointer flex-row items-center">
+              <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
+            </div>
+          </div>
+          <!--card 3-->
+          <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+            <img src="./images/itlogo.png" alt="" class="h-14 w-16" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">IT</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Get ahead of the game in the world of IT - uncover the skills and expertise of tomorrow's tech leaders through their resumes today.</p>
+            <div class="group flex cursor-pointer flex-row items-center">
+              <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
+            </div>
+          </div>
+          <!--card 4-->
+          <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+            <img src="./images/mechlogo.png" alt="" class="h-14 w-14" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">Mechanical</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Experience the innovation of tomorrow's mechanical engineers today - browse their resumes and unlock their potential.</p>
+            <div class="group flex cursor-pointer flex-row items-center">
+              <a href="#" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
+            </div>
+          </div>
+          <!--card 5-->
+          <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
+            <img src="./images/civil-logo (2).png" alt="" class="h-14 w-14" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">Civil</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Building a better tomorrow with today's civil engineers - discover their skills and experience through their resumes.</p>
+            <div class="group flex cursor-pointer flex-row items-center">
+              <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
+              <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--core features-->
+    <section id="features" class="corefeaturesection relative mt-14 w-full bg-[url(/images/core-features-sectionBg.svg)] bg-cover bg-center bg-no-repeat">
+      <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4">
+        <h2 class="font-mullish text-center text-2xl font-bold text-white">Features</h2>
+        <div class="bg-greenLight mx-auto mb-6 mt-4 h-1 w-6"></div>
+        <p class="font-mullish mx-auto max-w-[450px] text-center text-white">Unlock your Potential: Elevate your Resume with Our Powerful Features</p>
+
+        <!--grid -->
+        <div class="mt-8 grid grid-cols-1 gap-[2rem] md:grid-cols-2 lg:grid-cols-4">
+          <!--card1-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Fast & easy</h3>
+            <p class="font-mullish text-white opacity-80">Build your Brand new Resume in as little as 5-minutes. Transform your career in just 5 minutes - build your brand new resume and take the first step towards success today</p>
+          </div>
+          <!--card2-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">For free</h3>
+            <p class="font-mullish text-white opacity-80">No Need to pay Anything, Unlock the power of your potential for free - create a stunning resume in just 5 minutes and pave the way for your dream career</p>
+          </div>
+          <!--card3-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Templates</h3>
+            <p class="font-mullish text-white opacity-80">You can pick one of our handcrafted resume templates above. You can start building your resume in less than 5 seconds, using predefined sections approved by recruiters worldwide.</p>
+          </div>
+          <!--card4-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Edit in real time</h3>
+            <p class="font-mullish text-white opacity-80">If you're looking for a collaborative and efficient way to work here is the ultimate solution for seamless teamwork and productivity</p>
+          </div>
+          <!--card5-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">ATS-Friendly</h3>
+            <p class="font-mullish text-white opacity-80">Get past the first hurdle of job applications with ease - create an ATS-friendly resume in just 5 minutes and increase your chances of landing the job</p>
+          </div>
+          <!--card6-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Career Blog</h3>
+            <p class="font-mullish text-white opacity-80">Empower your career with expert insights and advice - follow our career blog for the latest tips, trends, and strategies to achieve your professional goals.</p>
+          </div>
+          <!--card7-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Get Insight</h3>
+            <p class="font-mullish text-white opacity-80">Discover the unique talents and accomplishments of your fellow students - browse their resumes and gain insights into their experiences, interests, and achievements.</p>
+          </div>
+          <!--card8-->
+          <div class="transition-all duration-200 hover:scale-105 cursor-pointer">
+            <img src="./images/instant-activation-icon.svg" alt="" />
+            <h3 class="font-mullish my-4 text-lg font-bold text-white">Best among others</h3>
+            <p class="font-mullish text-white opacity-80">Experience the ultimate in resume building - our powerful tool stands above the rest, offering a seamless and intuitive experience that results in a standout resume.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Company Section-->
+
+    <section id="company" class="relative -z-[100] -mt-[200px] bg-[#f5f8fe] pb-12 pt-40">
+      <div class="relative mx-auto flex w-11/12 max-w-[1080px] flex-col md:flex-row">
+        <!--left part -->
+        <div class="flex w-full flex-col justify-center sm:my-16 md:max-w-[calc(100%-500px)]">
+          <h2 class="font-mullish text-deepBlueHead text-2xl font-bold">Inspiring Career Path Learn from your Senior's Success Stories in Your <span class="text-lightBlue500">dream Company</span></h2>
+          <div class="bg-greenLight my-4 mb-10 h-1 w-6"></div>
+          <p class="font-mullish opacity-80">We make it easier for you to focus on building great resume while we work on simplifying your effords. Unlock the secrets to success at your dream company gain inspiration from the career paths and achievements of your seniors, and chart your own path to success.</p>
+          <p class="font-mullish mt-6 opacity-80">Focus on your goal while we handle the complexities of Resume Making.</p>
+          <br />
+          <button class="bg-lightBlue font-mullish hover:bg-lightBlue500 relative flex cursor-pointer place-content-center items-center self-stretch rounded-md px-[18px] py-[14px] font-bold text-white transition-all duration-200 md:w-fit md:justify-start md:pr-[90px]">
+            Explore Companies
+            <div class="bg-greenLight absolute right-6 flex h-[60px] w-12 skew-x-[20deg] items-center justify-center">
+              <!--arrow-->
+              <svg viewBox="0 0 24 24" focusable="false" class="h-[20px] w-[20px] -skew-x-[20deg]">
+                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+        <!--right part-->
+        <div class="relative mx-auto h-[500px] w-[500px] overflow-y-hidden">
+          <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)" class="absolute top-0 z-50 h-[150px] w-full"></div>
+
+          <img src="./images/comanies.png" alt="" class="companiesList absolute h-auto object-cover" />
+
+          <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)" class="absolute bottom-0 z-50 h-[150px] w-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Members Section -->
+    <section class="relative">
+      <div class="relative mx-auto w-11/12 max-w-[1300px] py-20">
+        <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute left-[2rem] top-[8rem] -z-10 w-[200px]" />
+
+        <h2 class="font-mullish text-deepBlueHead text-center text-2xl font-extrabold">OUR MEMBERS</h2>
+        <div class="bg-greenLight mx-auto my-4 h-1 w-6"></div>
+
+        <!--grid -->
+        <div class="mt-8 grid grid-cols-1 gap-[2rem] md:grid-cols-2 lg:grid-cols-4">
+          <!--card1-->
+          <div class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg">
+            <img class="w-full" src="./images/kk.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Kaustubh Kislaya</div>
+              <p class="text-base text-gray-700">we're passionate about helping people create professional resumes that showcase their skills and experience. Our team of experienced developers is dedicated to creating a user-friendly platform that makes the resume building process easy and intuitive.</p>
+            </div>
+          </div>
+
+          <!--card2-->
+          <div class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg">
+            <img class="w-full" src="./images/abhay.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Abhay Kumar Sharma</div>
+              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+          </div>
+
+          <!--card3-->
+          <div class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg">
+            <img class="w-full" src="./images/rishav.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Rishav Ranjan</div>
+              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+          </div>
+
+          <!--card4-->
+          <div class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg">
+            <img class="w-full" src="./images/deepak.jpg" alt="Mountain" />
+            <div class="px-6 py-4">
+              <div class="mb-2 text-xl font-bold">Deepak Kumar</div>
+              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sign up section-->
+    <section class="ctaSection relative h-full min-h-[510px] w-full bg-[url(/images/CTABg.svg)] bg-cover bg-no-repeat">
+      <!--main content box-->
+      <div class="relative mx-auto flex w-11/12 max-w-[1080px] flex-row items-center justify-between space-x-20 pt-16">
+        <!--left part-->
+        <div class="mt-12 flex max-w-[600px] flex-col gap-5">
+          <h2 class="font-mullish text-2xl font-bold text-white">Ready to jump-start your career</h2>
+          <div class="bg-greenLight h-1 w-6"></div>
+          <p class="font-mullish text-white">
+            Sign up now to experience the wonderful process of <br />
+            Resume building.
+          </p>
+
+          <ul class="flex flex-row flex-wrap gap-x-11 gap-y-3 text-white">
+            <li class="font-mullish flex flex-row text-white">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>ATS-Friendly </span>
+            </li>
+            <li class="font-mullish flex flex-row text-white">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>For Free </span>
+            </li>
+            <li class="font-mullish flex flex-row text-white">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Get Inspiration </span>
+            </li>
+            <li class="font-mullish flex flex-row text-white">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>Meet People with similar interest </span>
+            </li>
+          </ul>
+
+          <button class="font-mullish text-lightBlue300 hover:text-lightBlue500 flex min-w-[32px] items-center place-self-start rounded-sm border bg-white px-4 py-3 text-sm font-bold transition-all duration-200">
+            Sign Up
+            <svg viewBox="0 0 24 24" focusable="false" class="ml-3 h-[14px] w-[14px]">
+              <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!--right side wali image-->
+        <img src="./images/ctaImg.svg" alt="" width="240px" height="282px" class="mt-16 hidden pt-3 lg:block" />
+      </div>
+    </section>
+
+    <!-- --------------------------------Footer-------------------------------- -->
+    <footer class="background: linear-gradient(to right, #eef9fe, #edf7ff max-w-screen-xl) w-full">
+      <div class="mx-auto w-full">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 md:grid-cols-4 lg:py-8">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900">Company</h2>
+            <ul class="font-medium text-blue-900">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">About</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Careers</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Brand Center</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900">Help center</h2>
+            <ul class="font-medium text-blue-900">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Discord Server</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Twitter</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900">Legal</h2>
+            <ul class="font-medium text-blue-900">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Licensing</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900">Download</h2>
+            <ul class="font-medium text-blue-900">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">iOS</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Android</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Windows</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">MacOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100 px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved. </span>
+          <div class="mt-4 flex space-x-6 sm:justify-center md:mt-0">
+            <a href="https://www.facebook.com/kastubh.desouza" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="https://www.instagram.com/kaustubh_kislaya/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+              <span class="sr-only">Instagram page</span>
+            </a>
+            <a href="https://twitter.com/KaustubhKislaya" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="https://github.com/kaustubh-kislaya" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
