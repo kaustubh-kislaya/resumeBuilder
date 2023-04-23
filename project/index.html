@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
+  <link rel="import" href="login.html">
   <script src="https://unpkg.com/feather-icons"></script>
   <title>ResumeBuilder</title>
 
@@ -90,14 +91,14 @@
         </ul>
 
         <div class="flex space-x-6">
-          <img src="./images/kiitlogo.png" width="60px" height="15px" class="hidden lg:block" />
-          <button class="font-mullish border-lightBlue rounded-sm border px-5 py-3 text-sm font-bold text-white">Log in</button>
-          <button class="font-mullish text-lightBlue300 hover:text-lightBlue500 hidden rounded-sm border bg-white px-4 py-3 text-center text-sm font-bold transition-all duration-200 lg:flex">
-            Sign Up
-            <svg viewBox="0 0 24 24" focusable="false" class="ml-3 h-[14px] w-[14px]">
-              <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-            </svg>
-          </button>
+          <img src="./images/kiitlogo.png" width="75px" height="15px" class="hidden lg:block" />
+          <a href="./login.html">  
+            <!-- <button class="font-mullish border-lightBlue rounded-sm border px-5 py-3 text-sm font-bold text-white"> <a href="#login"></a>Log in</button> -->
+            <input type="button" value="Login" class="font-mullish border-lightBlue rounded-sm border px-5 py-3 text-sm font-bold text-white hover: cursor-pointer hidden lg:flex"></input>
+          </a>
+          <a href="./login.html">  
+          <input type="button" value="Signup" class="font-mullish text-lightBlue300 hover:cursor-pointer hidden rounded-sm border bg-white px-4 py-3 text-center text-sm font-bold transition-all duration-200 lg:flex">
+          </a>
         </div>
       </div>
     </nav>
@@ -557,12 +558,9 @@
             </li>
           </ul>
 
-          <button class="font-mullish text-lightBlue300 hover:text-lightBlue500 flex min-w-[32px] items-center place-self-start rounded-sm border bg-white px-4 py-3 text-sm font-bold transition-all duration-200">
-            Sign Up
-            <svg viewBox="0 0 24 24" focusable="false" class="ml-3 h-[14px] w-[14px]">
-              <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-            </svg>
-          </button>
+          <a href="./login.html">  
+            <input type="button" value="Signup" class="font-mullish text-lightBlue300 hover:cursor-pointer hidden rounded-sm border bg-white px-4 py-3 text-center text-sm font-bold transition-all duration-200 lg:flex">
+            </a>
         </div>
 
         <!--right side wali image-->
