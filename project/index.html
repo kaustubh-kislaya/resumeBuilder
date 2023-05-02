@@ -252,11 +252,6 @@
                     </svg>
                   </div>
                 </button>
-                <!--hyperlink wala-->
-                <div class="group flex cursor-pointer flex-row items-center">
-                  <a href="#" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
-                  <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-lightBlue h-5 w-5 transition-all duration-200"></i>
-                </div>
               </div>
             </div>
             <!--background image for content box-->
@@ -342,7 +337,7 @@
           <!--card 2-->
           <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
             <img src="./images/ETClogo.png" alt="" class="h-12 w-12" />
-            <h3 class="font-mullish pt-4 text-lg font-bold">Electronics & Telecommunication</h3>
+            <h3 class="font-mullish pt-4 text-lg font-bold">Electronics</h3>
             <p class="font-mullish text-grayText py-3 leading-normal">Discover the brilliance of tomorrow's tech pioneers - browse the resumes of top electronics and telecommunication students today.</p>
             <div class="group flex cursor-pointer flex-row items-center">
               <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
@@ -351,9 +346,9 @@
           </div>
           <!--card 3-->
           <div class="max-h-[300px] w-full cursor-pointer bg-white bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat p-10 transition-all duration-200 hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)]">
-            <img src="./images/itlogo.png" alt="" class="h-14 w-16" />
-            <h3 class="font-mullish pt-4 text-lg font-bold">IT</h3>
-            <p class="font-mullish text-grayText py-3 leading-normal">Get ahead of the game in the world of IT - uncover the skills and expertise of tomorrow's tech leaders through their resumes today.</p>
+            <img src="./images/electrical_logo.png" alt="" class="h-14 w-16" />
+            <h3 class="font-mullish pt-4 text-lg font-bold">Electrical</h3>
+            <p class="font-mullish text-grayText py-3 leading-normal">Get ahead of the game in the world of Electrical - uncover the skills and expertise of tomorrow's leaders through their resumes today.</p>
             <div class="group flex cursor-pointer flex-row items-center">
               <a href="" class="font-mullish text-lightBlue500 group-hover:text-lightBlue font-bold transition-all duration-200">Know More</a>
               <i data-feather="chevron-right" class="text-lightBlue500 group-hover:text-grayBlue h-5 w-5 transition-all duration-200"></i>
@@ -446,7 +441,7 @@
 
     <!--Company Section-->
 
-    <section id="company" class="relative -z-[100] -mt-[200px] bg-[#f5f8fe] pb-12 pt-40">
+    <section id="company" class="relative -z-[10] -mt-[200px] bg-[#f5f8fe] pb-12 pt-40">
       <div class="relative mx-auto flex w-11/12 max-w-[1080px] flex-col md:flex-row">
         <!--left part -->
         <div class="flex w-full flex-col justify-center sm:my-16 md:max-w-[calc(100%-500px)]">
@@ -454,16 +449,7 @@
           <div class="bg-greenLight my-4 mb-10 h-1 w-6"></div>
           <p class="font-mullish opacity-80">We make it easier for you to focus on building great resume while we work on simplifying your effords. Unlock the secrets to success at your dream company gain inspiration from the career paths and achievements of your seniors, and chart your own path to success.</p>
           <p class="font-mullish mt-6 opacity-80">Focus on your goal while we handle the complexities of Resume Making.</p>
-          <br />
-          <button class="bg-lightBlue font-mullish hover:bg-lightBlue500 relative flex cursor-pointer place-content-center items-center self-stretch rounded-md px-[18px] py-[14px] font-bold text-white transition-all duration-200 md:w-fit md:justify-start md:pr-[90px]">
-            Explore Companies
-            <div class="bg-greenLight absolute right-6 flex h-[60px] w-12 skew-x-[20deg] items-center justify-center">
-              <!--arrow-->
-              <svg viewBox="0 0 24 24" focusable="false" class="h-[20px] w-[20px] -skew-x-[20deg]">
-                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-              </svg>
-            </div>
-          </button>
+          <br/>
         </div>
 
         <!--right part-->
@@ -476,6 +462,19 @@
         </div>
       </div>
     </section>
+
+    <!-- button -->
+    <div class="px-64 bg-[#f5f8fe]">
+      <button class="bg-lightBlue font-mullish hover:bg-lightBlue500 relative flex place-content-center items-center self-stretch rounded-md px-[18px] py-[14px] font-bold text-white transition-all duration-200 md:w-fit md:justify-start md:pr-[90px]">
+        Discover
+        <div class="bg-greenLight absolute right-6 flex h-[60px] w-12 skew-x-[20deg] items-center justify-center">
+          <!--arrow-->
+          <svg viewBox="0 0 24 24" focusable="false" class="h-[20px] w-[20px] -skew-x-[20deg]">
+            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+          </svg>
+        </div>
+      </button>
+    </div>
 
     <!-- Members Section -->
     <section class="relative">
@@ -492,7 +491,13 @@
             <img class="w-full" src="./images/kk.jpg" alt="Mountain" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Kaustubh Kislaya</div>
-              <p class="text-base text-gray-700">we're passionate about helping people create professional resumes that showcase their skills and experience. Our team of experienced developers is dedicated to creating a user-friendly platform that makes the resume building process easy and intuitive.</p>
+              <p class="text-base text-gray-700">Team Leader and Project Management. </br>
+                Full Stack Developer <br>
+                Architecture Designer <br>
+                Database Designer <br>
+                UI/UX Designer <br>
+                Freelancer
+              </p>
             </div>
           </div>
 
@@ -501,7 +506,7 @@
             <img class="w-full" src="./images/abhay.jpg" alt="Mountain" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Abhay Kumar Sharma</div>
-              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+              <p class="text-base text-gray-700">Frontend Developer <br> UI/UX Designer</p>
             </div>
           </div>
 
@@ -510,7 +515,7 @@
             <img class="w-full" src="./images/rishav.jpg" alt="Mountain" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Rishav Ranjan</div>
-              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+              <p class="text-base text-gray-700">Frontend Developer</p>
             </div>
           </div>
 
@@ -519,7 +524,7 @@
             <img class="w-full" src="./images/deepak.jpg" alt="Mountain" />
             <div class="px-6 py-4">
               <div class="mb-2 text-xl font-bold">Deepak Kumar</div>
-              <p class="text-base text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+              <p class="text-base text-gray-700">Frontend Developer</p>
             </div>
           </div>
         </div>

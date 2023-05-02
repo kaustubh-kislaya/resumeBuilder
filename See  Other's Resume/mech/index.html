@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mechanical</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<script>
+    function toggleFullScreen(event) {
+        const element = event.target.parentNode;
+        if (!document.fullscreenElement) {
+            element.requestFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="relative w-full overflow-x-hidden">
+        <!--nav section-->
+        <div class="font-ggSans bg-gray-800">
+            <!-- Navbar -->
+            <nav class="mx-auto flex h-[72px] max-w-[1200px] items-center justify-around space-x-11 px-7 text-[#fff] xl:px-0">
+                <!-- Logo -->
+                <div>
+                    <img src="./images/resumify-logo.png" alt="" width="125px" class="h-full" />
+                </div>
+                <!-- Nav Options -->
+                <div class="font-ggSans hidden gap-5 font-[16px] font-[600] xl:flex">
+                    <a href="#electrical" class="capitalize hover:underline">mechanical</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- image section -->
+        <div class="relative overflow-hidden">
+            <img src="./images/mech.jpg" class="h-screen w-full" />
+            <div class="absolute bottom-0 left-0 right-0 bg-gray-800 px-4 py-10 opacity-70">
+                <h3 class="font-mullish text-2xl font-extrabold leading-[1.2] text-white md:block">Hey, WELCOME to KIIT
+                    School of Civil</h3>
+                <p class="mt-2 text-sm text-gray-300">
+                    At KIIT School of Mechanical Engineering, Resumify provides a database of resumes from our mechanical
+                    engineering students for potential employers. We offer workshops, mock interviews, and networking events to help students
+                    prepare for the job application process, and work closely with employers to identify job opportunities.</p>
+            </div>
+        </div>
+
+        <!-- resume section -->
+        <div class="relative mt-[190px] overflow-hidden">
+            <!-- Civil -->
+            <section id="electrical">
+                <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
+                    class="absolute -top-[8rem] left-[10rem] -z-10 inline-block" />
+
+                <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" width="233" height="167"
+                    class="absolute right-0 top-[3rem] inline-block rotate-180" />
+
+                <div class="relative mx-auto w-11/12 max-w-[1080px] pt-4">
+                    <!--heading-->
+                    <h2 class="font-mullish hidden text-center text-2xl font-extrabold leading-[1.2] md:block">
+                        Explore the talent pool of <br />
+                        School of <span class="text-blue-500">Mechanical</span>
+                    </h2>
+                    <div class="mx-auto mb-6 mt-4 h-1 w-6 bg-green-400"></div>
+
+                    <div class="mt-10 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                        <!--Box1-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen"
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+                        </div>
+
+                        <!--Box2-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen"
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+                        </div>
+
+                        <!--Box3-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box4-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box5-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box6-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box7-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box8-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box9-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box10-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box11-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box12-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box13-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box14-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box15-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box16-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box17-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box18-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box19-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box20-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box21-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box22-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box23-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+
+                        <!--Box24-->
+                        <div
+                            class="max-w-sm overflow-hidden rounded rounded-t-lg shadow-lg transition-all duration-200 hover:scale-105">
+                            <img src="./images/kaustubh's_resume.jpg"
+                                class="cursor-pointer object-contain h-full max-h-screen "
+                                onclick="toggleFullScreen(event)" style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+
+</html>
