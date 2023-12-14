@@ -4,9 +4,7 @@ The premise of creating a resume builder website is to offer people an easy and 
 
 The website provides a user-friendly interface for creating professional resumes using customizable templates. Users can also view batchmates' and senior's resumes to gain insights into effective formats and contents. The website offers career guidance resources and expert advice on job search strategies, interview preparation, and networking tips
 
-![image](https://github.com/kaustubh-kislaya/resumeBuilder/assets/118384878/6ec1ff4c-f922-482c-b0ac-409dffa1eb0c)
-
-![image](https://github.com/kaustubh-kislaya/resumeBuilder/assets/118384878/a5331a1d-0958-4fde-ac22-c0fcf5a49837)
+![image](https://github.com/kaustubh-kislaya/resumeBuilder/assets/118384878/6ec1ff4c-f922-482c-b0ac-409dffa1eb0c) ![image](https://github.com/kaustubh-kislaya/resumeBuilder/assets/118384878/a5331a1d-0958-4fde-ac22-c0fcf5a49837)
 
 ![image](https://github.com/kaustubh-kislaya/resumeBuilder/assets/118384878/5d0b60ad-5320-4524-82a5-2421aaf5c02e)
 
